@@ -3,12 +3,13 @@ import bdFlag from '../assets/bd.png'
 import cgFlag from '../assets/cg.png'
 import logo from '../assets/logo.png'
 import { CarouselComponent } from './Slider'
+import VideoPlayer from './VideoPlayer'
 
 const PlayContent = () => {
   const currentDate = new Date();
 
   return (
-    <div className=' w-[600px] border-2 bg-[#0A3981]'>
+    <div className=' w-full min-h-fit border-2 bg-[#0A3981]'>
         <div className=" w-full h-full">
             {/* header */}
             <div className="w-full h-[200px]  flex justify-between items-center">
@@ -17,15 +18,18 @@ const PlayContent = () => {
 <img className=' w-1/3 h-[120px]' src={cgFlag} />
             </div>
 
-            <div className=" h-[50px] border-2 px-4 ">
+            <div className=" h-full border-2 px-4 ">
               <Marquee>
               <h1 className='text-3xl font-extrabold text-white'>Welcome to Bangladesh Coast Guard</h1>
               </Marquee>
              
             </div>
             {/* slider */}
-            <div className="div py-2">
+            <div className="w-full py-2">
               <CarouselComponent />
+            </div>
+            <div className="w-full py-2">
+              <VideoPlayer />
             </div>
             {/* timer and date */}
             <div className=' flex justify-between items-center h-40 w-full border-2 text-white px-12 '>
