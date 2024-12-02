@@ -9,7 +9,7 @@ const PlayContent = () => {
   const currentDate = new Date();
 
   return (
-    <div className=' w-full min-h-full border-2 bg-[#0A3981]'>
+    <div className=' w-full min-h-full border-2 bg-[#02070e]'>
         <div className=" w-full h-full">
             {/* header */}
             <div className="w-full h-[240px]  flex justify-between items-center">
@@ -19,7 +19,7 @@ const PlayContent = () => {
             </div>
             <div className=" py-8 border-2 px-2 ">
               <Marquee>
-              <h1 className='text-3xl font-extrabold text-red-500'> Welcome to Bangladesh Coast Guard </h1>
+              <h1 className='text-[50px] font-extrabold text-red-500'> Welcome to Bangladesh Coast Guard </h1>
               </Marquee>
             </div>
             {/* slider */}
