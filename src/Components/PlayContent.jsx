@@ -21,6 +21,11 @@ const PlayContent = () => {
             <div className="div py-2">
               <CarouselComponent />
             </div>
+            {/* timer and date */}
+            <div className=' flex justify-between items-center h-40 w-full border-2 '>
+<h1>02/10/2024</h1>
+<h1>Time: 23:37</h1>
+            </div>
         </div>
     </div>
   )
