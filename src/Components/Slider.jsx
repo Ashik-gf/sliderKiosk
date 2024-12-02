@@ -16,7 +16,7 @@ export const CarouselComponent = () => {
       <CarouselSlides>
         {[p1, p2, p3, p4].map((slide) => (
           <CarouselItem key={slide}>
-            <div className="flex items-center justify-center rounded-xl border h-96 ">
+            <div className="flex items-center justify-center rounded-xl border h-[500px] ">
               <img src={slide} className=" w-full " />
             </div>
           </CarouselItem>

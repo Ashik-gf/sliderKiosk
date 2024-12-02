@@ -9,23 +9,21 @@ const PlayContent = () => {
   const currentDate = new Date();
 
   return (
-    <div className=' w-full min-h-fit border-2 bg-[#0A3981]'>
+    <div className=' w-full min-h-full border-2 bg-[#0A3981]'>
         <div className=" w-full h-full">
             {/* header */}
-            <div className="w-full h-[200px]  flex justify-between items-center">
+            <div className="w-full h-[240px]  flex justify-between items-center">
 <img className=' w-1/3 h-[120px]' src={bdFlag} />
 <img className=' w-1/4 h-[120px]' src={logo} />
 <img className=' w-1/3 h-[120px]' src={cgFlag} />
             </div>
-
-            <div className=" h-full border-2 px-4 ">
+            <div className=" py-8 border-2 px-2 ">
               <Marquee>
-              <h1 className='text-3xl font-extrabold text-white'>Welcome to Bangladesh Coast Guard</h1>
+              <h1 className='text-3xl font-extrabold text-red-500'> Welcome to Bangladesh Coast Guard </h1>
               </Marquee>
-             
             </div>
             {/* slider */}
-            <div className="w-full py-2">
+            <div className="w-full h-full py-2">
               <CarouselComponent />
             </div>
             <div className="w-full py-2">
